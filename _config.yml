@@ -1,16 +1,24 @@
 # Site settings
-name: name
-email: email
+name: kevin
+email: kevin031995@gmail.com
 url: url
-description: "A blog and a portfolio"
-author: "author"
-title: "BlogFolio"
+description: "Kevin Herrera, Game Designer blog and portfolio"
+author: "Kevin Herrera"
+title: "Game Designer Portfolio"
 permalink: pretty
-baseurl: /jekyll-theme-blogfolio
+baseurl: /
 
 # social
 github:
-  username: username
+  username: AaronClaros
 
 twitter:
-  username: username
+  username: aaronclaros
+
+linkedin:
+  username: kevin-aaron-herrera-claros-192375119
+
+# Work contact info
+contactInfo:
+  resumePath: /assets/files/Kevin-Herrera_Resume-GD.pdf
+  contactEmail: kevin031995@gmail.com
