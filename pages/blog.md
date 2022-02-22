@@ -4,5 +4,5 @@ title: Blog
 permalink: /blog/
 ---
 
-{% include header.html %}
+{% include header-blog.html %}
 {% include blogs.html %}

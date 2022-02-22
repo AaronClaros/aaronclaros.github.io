@@ -1,11 +1,11 @@
 <section class="section">
     <div class="container">
-        <div class="columns">
+        <div class="columns is-multiline">
             <div class="column is-one-third">
                 <div class="columns is-multiline is-centered">
-                    <div class="column is-full">
+                    <div class="column is-8">
                         <figure class="image ">
-                            <img class="is-rounded" src="http://via.placeholder.com/128x128">
+                            <img class="is-rounded" src="{{site.data.about.profilePicPath}}">
                         </figure>
                     </div>
                     <div class="columns is-mobile is-centered">
@@ -28,30 +28,135 @@
                             </button>
                         </div>
                     </div>
+                    <div class="column">
+                        <div class="content">
+                            
+                            {% for paragraph in site.data.about.paragraphs %}
+                            <p>{{paragraph}}</p>
+                            {% endfor %}
+                            
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <div class="column">
-                <div class="content">
-                    
-                    {% for paragraph in site.data.about.paragraphs %}
-                    <p>{{paragraph}}</p>
+            <div class="column is-desktop">
+                <div class="tabs is-boxed is-fullwidth">
+                    {% for tabs in site.data.about.mainInfoTabs %}
+                        <li class="tablinks" id="{{tabs.defaultAction}}" onclick="selectTab(event, '{{tabs.id}}')">
+                            <a>
+                            <span class="icon is-medium"><i class="fa-solid {{tabs.icon}}" aria-hidden="true"></i></span>
+                            <span>{{tabs.label}}</span>
+                            </a>
+                        </li>
                     {% endfor %}
-                    
                 </div>
+                {% for tabs in site.data.about.mainInfoTabs %}
+                    <div id="{{tabs.id}}" class="tabcontent" style="display: none;">
+                        <div class="columns is-multiline">
+                            {% for tabData in tabs.list %}
+                                <div class="column is-full">
+                                    <div class="box">
+                                        {% if tabs.id == "joblist" %}
+                                        <div class="content">
+                                            <p>
+                                                <strong>{{tabData.jobTitle}}</strong> - {{tabData.company}} - {{tabData.timeframe}} 
+                                                <br>
+                                                {{tabData.description}}
+                                                <div class="tags are-normal">
+                                                    {% for skill in tabData.skills %}
+                                                    <span class="tag"> {{skill}} </span>
+                                                    {% endfor %}
+                                                </div>
+                                            </p>
+                                        </div>
+                                        {% endif %}
+                                        {% if tabs.id == "worklist" %}
+                                        <div class="content">
+                                            <div class="columns">
+                                                {% if tabData.linkEmbed" %}
+                                                <div class="column is-three-quarters">
+                                                    <p>
+                                                        <strong>{{tabData.name}}</strong> - {{tabData.date_added}} 
+                                                        <br>
+                                                        {{tabData.description}}
+                                                        
+                                                        <div class="tags are-normal">
+                                                            {% for technologie in tabData.technologies %}
+                                                            <span class="tag"> {{technologie}} </span>
+                                                            {% endfor %}
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="column">
+                                                    <iframe src="{{tabData.linkEmbed}}" height="177" width="200" frameborder="10">
+                                                        <a href="{{tabData.link}}">{{tabData.name}} by aaronclaros</a>
+                                                    </iframe>
+                                                </div>
+                                                {% else %}
+                                                <div class="column">
+                                                    <button class="button is-fullwidth">
+                                                        <p>
+                                                            <a href="{{tabData.link}}">{{tabData.name}}</a>
+                                                        </p>
+                                                    </button>
+                                                </div>
+                                                
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        {% endif %}
+                                        
+                                        {% if tabs.id == "edulist" %}
+                                        <div class="content">
+                                            <p>
+                                                <strong>{{tabData.title}}</strong> - {{tabData.place}} - {{tabData.timeframe}} 
+                                                <br>
+                                                {{tabData.description}}
+                                            </p>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
 </section>
 <script>
+
     const buttonResume = document.querySelector('.resumeBttn');
     buttonResume.addEventListener('click', onClickOpenResume);
     function onClickOpenResume(){
-        window.open("{{site.contactInfo.resumePath}}", '_blank').focus();
+        window.open("{{site.data.about.contactInfo.resumePath}}", '_blank').focus();
     }
 
     const buttonEmail = document.querySelector('.emailBttn');
     buttonEmail.addEventListener('click', onClickSendEmail);
     function onClickSendEmail(){
-        window.location = `mailto:{{site.contactInfo.contactEmail}}`;
+        window.location = `mailto:{{site.data.about.contactInfo.contactEmail}}`;
     }
+    function selectTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("is-active", " ");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " is-active";
+    }
+    document.getElementById("defaultOpen").click();
 </script>

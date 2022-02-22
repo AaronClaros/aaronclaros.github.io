@@ -4,9 +4,11 @@
             <p class="title is-1">
                 {{site.title}}
             </p>
-            <p class="subtitle is-4">
-                <em>{{ site.data.header.message }}</em>
-            </p>
+            <div class="tags are-normal">
+                {% for highlight in site.data.about.highlights %}
+                <span class="tag is-primary is-info">{{highlight}}</span>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>

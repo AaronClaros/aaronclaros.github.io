@@ -4,7 +4,7 @@ email: kevin031995@gmail.com
 url: url
 description: "Kevin Herrera, Game Designer blog and portfolio"
 author: "Kevin Herrera"
-title: "Game Designer Portfolio"
+title: "Kevin Herrera's Portfolio"
 permalink: pretty
 baseurl: /
 
@@ -17,8 +17,3 @@ twitter:
 
 linkedin:
   username: kevin-aaron-herrera-claros-192375119
-
-# Work contact info
-contactInfo:
-  resumePath: /assets/files/Kevin-Herrera_Resume-GD.pdf
-  contactEmail: kevin031995@gmail.com
