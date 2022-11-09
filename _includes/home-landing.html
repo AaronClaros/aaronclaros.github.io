@@ -57,63 +57,73 @@
                                 <div class="column is-full">
                                     <div class="box">
                                         {% if tabs.id == "joblist" %}
-                                        <div class="content">
-                                            <p>
-                                                <strong>{{tabData.jobTitle}}</strong> - {{tabData.company}} - {{tabData.timeframe}} 
-                                                <br>
-                                                {{tabData.description}}
-                                                <div class="tags are-normal">
-                                                    {% for skill in tabData.skills %}
-                                                    <span class="tag"> {{skill}} </span>
-                                                    {% endfor %}
-                                                </div>
-                                            </p>
-                                        </div>
+                                            <div class="content">
+                                                <p>
+                                                    <strong>{{tabData.jobTitle}}</strong> - {{tabData.company}} - {{tabData.timeframe}} 
+                                                    <br>
+                                                    {{tabData.description}}
+                                                    <div class="tags are-normal">
+                                                        {% for skill in tabData.skills %}
+                                                        <span class="tag"> {{skill}} </span>
+                                                        {% endfor %}
+                                                    </div>
+                                                </p>
+                                            </div>
                                         {% endif %}
                                         {% if tabs.id == "worklist" %}
-                                        <div class="content">
-                                            <div class="columns">
-                                                {% if tabData.linkEmbed" %}
-                                                <div class="column is-three-quarters">
-                                                    <p>
-                                                        <strong>{{tabData.name}}</strong> - {{tabData.date_added}} 
-                                                        <br>
-                                                        {{tabData.description}}
-                                                        
-                                                        <div class="tags are-normal">
-                                                            {% for technologie in tabData.technologies %}
-                                                            <span class="tag"> {{technologie}} </span>
-                                                            {% endfor %}
-                                                        </div>
+                                            {% if tabData.name == "View All Projects" %}
+                                                <div class="column">
+                                                    <p style="text-align:center">
+                                                        <a href="{{tabData.link}}">{{tabData.name}} </a>
                                                     </p>
                                                 </div>
-                                                <div class="column">
-                                                    <iframe src="{{tabData.linkEmbed}}" height="177" width="200" frameborder="10">
-                                                        <a href="{{tabData.link}}">{{tabData.name}} by aaronclaros</a>
-                                                    </iframe>
+                                            {% else %}
+                                                <div class="content">
+                                                    <div class="columns">
+                                                        <div class="column is-three-quarters">
+                                                            <p>
+                                                                <strong>{{tabData.name}}</strong> - {{tabData.date_added}} 
+                                                                <br>
+                                                                {{tabData.description}}
+                                                                
+                                                                <div class="tags are-normal">
+                                                                    {% for technologie in tabData.technologies %}
+                                                                    <span class="tag"> {{technologie}} </span>
+                                                                    {% endfor %}
+                                                                </div>
+                                                            </p>
+                                                        </div>
+                                                        {% if tabData.linkEmbed %}
+                                                            <div class="column">
+                                                                <iframe src="{{tabData.linkEmbed}}" height="177" width="200" frameborder="10">
+                                                                    <a href="{{tabData.link}}">{{tabData.name}} by aaronclaros</a>
+                                                                </iframe>
+                                                            </div>
+                                                        {% else %}
+                                                            <div class="column">
+                                                                <img src="{{tabData.image}}" alt="Image" height="177" width="200" frameborder="10">
+                                                            </div>
+                                                        {% endif %}
+                                                    </div>
+                                                    {% if tabData.link %}
+                                                        <div class="column">
+                                                            <p style="text-align:center">
+                                                                <a href="{{tabData.link}}" target="_blank">Learn More</a>
+                                                            </p>
+                                                        </div>
+                                                    {% endif %}
                                                 </div>
-                                                {% else %}
-                                                <div class="column">
-                                                    <button class="button is-fullwidth">
-                                                        <p>
-                                                            <a href="{{tabData.link}}">{{tabData.name}}</a>
-                                                        </p>
-                                                    </button>
-                                                </div>
-                                                
-                                                {% endif %}
-                                            </div>
-                                        </div>
+                                            {% endif %}
                                         {% endif %}
                                         
                                         {% if tabs.id == "edulist" %}
-                                        <div class="content">
-                                            <p>
-                                                <strong>{{tabData.title}}</strong> - {{tabData.place}} - {{tabData.timeframe}} 
-                                                <br>
-                                                {{tabData.description}}
-                                            </p>
-                                        </div>
+                                            <div class="content">
+                                                <p>
+                                                    <strong>{{tabData.title}}</strong> - {{tabData.place}} - {{tabData.timeframe}} 
+                                                    <br>
+                                                    {{tabData.description}}
+                                                </p>
+                                            </div>
                                         {% endif %}
                                     </div>
                                 </div>

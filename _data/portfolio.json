@@ -1,43 +1,69 @@
 {
     "items": [
         {
-            "name": "Project One",
-            "link": "",
-            "image": "http://via.placeholder.com/480x320",
-            "date_added": "2017-06-09",
-            "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
+            "name": "Sacred Tails",
+            "link": "https://www.sacredtails.com/",
+            "image": "/assets/images/Portfolio/SacredTails/sacred_tails_banner.jfif",
+            "date_added": "April 2022 - November 2022, PC - Windows ",
+            "description": "Blockchain turn-based combat game, collect NFT monsters called Shinseis and fight with them against other players. <br> <a href='https://www.youtube.com/watch?v=-GOJLQ9uhV8' target='blank'>Gameplay Preview Video</a>",
+            "roles": "Role: <em>Principal Game Designer</em> (Outsourcing-Contractor)",
             "technologies": [
-                "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
+                "Game Flow Design", "UX Design", "PvP Combat Design", "PvP Combat Balance", "Character Dialogs Writing", "Unity3D Scripts Edit/Update"
             ]
         },
         {
-            "name": "Project Two",
-            "link": "",
-            "image": "http://via.placeholder.com/480x320",
-            "date_added": "2017-06-09",
-            "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
+            "name": "Long Delivery",
+            "link": "https://aaronclaros.itch.io/long-delivery",
+            "image": "/assets/images/Portfolio/LongDelivery/long_delivery-title_screen.png",
+            "date_added": "September 2021, PC - Windows",
+            "description": "Puzzle Game Prototype, Control a delivery truck to match the correct building for each container color. <br> <a href='https://youtu.be/YWMagoJXqzY' target='blank'>Gameplay Video</a>",
+            "roles": "Role: <em>Game Developer</em>",
             "technologies": [
-                "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
+                "Prototyping", "Game Design", "Level Design", "Puzzle Design", "Unity3D Programming"
             ]
         },
         {
-            "name": "Project Three",
-            "link": "",
-            "image": "http://via.placeholder.com/480x320",
-            "date_added": "2017-06-09",
-            "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
+            "name": "Sword of Destiny",
+            "link": "https://aaronclaros.itch.io/sword-of-destiny",
+            "image": "/assets/images/Portfolio/SwordOfDestiny/SwordOfDestiny-Game_Title.png",
+            "date_added": "January 2022, PC - Windows",
+            "description": "Turn-Based RPG Game Prototype, Defeat demonic spirits by killing or sparing them using a sword that can heal and damage them. <br> <a href='https://youtu.be/CE5t0aNbv_8' target='blank'>Gameplay Video</a>",
+            "roles": "Role: <em>Game Developer</em>",
             "technologies": [
-                "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
+                "Prototyping", "Game Design", "Combat Design", "Unity3D Programming"
             ]
         },
         {
-            "name": "Project Four",
-            "link": "",
-            "image": "http://via.placeholder.com/480x320",
-            "date_added": "2017-06-09",
-            "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
+            "name": "Project MBDK Ultra",
+            "link": "https://aaronclaros.itch.io/mbdk-ultra",
+            "image": "/assets/images/Portfolio/ProjectMBDK-Ultra/ProjectMBDK-Ultra-Game_Title.png",
+            "date_added": "July 2020",
+            "description": "2D Puzzle Game Prototype. You are part of a secret experiment about telekinesis but also hungry for hamburgers, Complete the tests in order to get some burgers. <br> <a href='https://youtu.be/bH0qpMP-iNQ' target='blank'>Gameplay Video</a> ",
+            "roles": "Role: <em>Game Developer</em>",
             "technologies": [
-                "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
+                "Prototyping", "Game Design", "Level Design", "Puzzle Design", "Unity3D Programming", "Character PixelArt", "Environment PixelArt"
+            ]
+        },
+        {
+            "name": "Perfect Dream",
+            "link": "https://aaronclaros.itch.io/perfect-dream",
+            "image": "/assets/images/Portfolio/PerfectDream/PerfectDream-Game_Title.png",
+            "date_added": "September 2020",
+            "description": "2D visual novel with a gameplay twist, You just start a relationship with your childhood friend, now you need to focus on a greater life challenge, to find a job.",
+            "roles": "Role: <em>Game Developer</em>",
+            "technologies": [
+                "Prototyping", "Game Design", "Level Design", "Character Dialogs Writing", "Unity3D Programming"
+            ]
+        },
+        {
+            "name": "Anata Carnival",
+            "link": "https://play.google.com/store/apps/details?id=com.xiarastudios.Anata",
+            "image": "/assets/images/Portfolio/AnataCarnival/AnataCarnival-GameTitle.png",
+            "date_added": "February 2017, Mobile - Android",
+            "description": "2D fighting game, Fight with Characters from the Bolivian Tradicional Carnival Dances",
+            "roles": "Role: <em>Unity3D Game Programmer</em>",
+            "technologies": [
+                "Unity3D UI Programming", "Unity3D Gameplay Programmer", "Unity3D Multiplayer Programmer", "2D Animator"
             ]
         }
     ]

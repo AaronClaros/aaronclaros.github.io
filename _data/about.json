@@ -1,8 +1,14 @@
 {
     "paragraphs": [
-        "Hello, there! Just a little bit about myself... ", 
-        "From <a href='http://slipsum.com/lite/'>http://slipsum.com/lite/</a>:", 
-        "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."],
+        "Hello there, I am Kevin Herrera ", 
+        "I am a professional game developer with more than 6 years developing games, and quality assurance engineer with 3 years of work experience.",
+        "I believe that videogames have have more to offer when it comes to delivering deep interactive experiences.",
+        "So, I am trying to construct a carrear as game designer to learn and discover how to create better game experiences.",
+        "You can view all the game I have made as an indie developer at: <a href='https://aaronclaros.itch.io/'>https://aaronclaros.itch.io/</a>",
+        "Visit my <a href='/blog/'>blog</a> if you what to read what I have learned.",
+        "If you want to talk, my email is: kevin031995@gmail.com",
+        "Or talk me on twitter: <a href='https://twitter.com/KevinHerreraGD'>https://twitter.com/KevinHerreraGD</a>"
+    ],
     "highlights": ["Game Designer", "Automation Tester", "Game Developer", "Unity Programmer"],
     "profilePicPath": "/assets/images/profile-pic.jpg",
     "contactInfo": {
@@ -17,18 +23,32 @@
             "defaultAction":"defaultOpen",
             "list":[
                 {
-                    "jobTitle": "Programmer",
-                    "company": "company",
-                    "timeframe": "Jan 2020 - July 2021",
-                    "description": "I work a lot",
-                    "skills": ["java", "python"]
+                    "jobTitle": "Principal Game Designer, Remote",
+                    "company": "Timba Games",
+                    "timeframe": "April 2022 to November 2021",
+                    "description": "<ul><li>Game Design Document an Game Flow Authoring.</li><li>PvP Combat Design and Balance.</li><li>Character Statistics Design.</li><li>UX design for all game main screens.</li><li>Testing and Follow up of customer issues.</li><li>NPC characters Dialog Authoring.</li></ul> ",
+                    "skills": ["Game Flow Design", "UX Design", "PvP Combat Design", "PvP Combat Balance", "Character Dialogs Writing", "Unity3D Scripts Edit/Update"]
                 },
                 {
-                    "jobTitle": "Programmer 2",
-                    "company": "company",
-                    "timeframe": "Jan 2020 - July 2021",
-                    "description": "I work a lot",
-                    "skills": ["java", "python"]
+                    "jobTitle": "Staff Advanced QA, Remote",
+                    "company": "Oktana Corporation",
+                    "timeframe": "September 2020 to March 2022",
+                    "description": "<ul><li>Daily meetings, Sprint Planning meetings, Retrospective meetings.</li><li>Regression testing before and after product releases.</li><li>Write and execute manual tests for Salesforce products.</li><li>Testing and Follow up of customer issues.</li><li>Manage team members to execute test cases.</li></ul> ",
+                    "skills": ["Project Planning", "Team Managment", "Software Testing"]
+                },
+                {
+                    "jobTitle": "Junior Automation QA, Cochabamba - Bolivia",
+                    "company": "Jalasoft",
+                    "timeframe": "September 2018 to August 2020",
+                    "description": "<ul><li>Ownership of features on QA side.</li><li>Planning, writing and executing tests to cover feature requirements.</li><li> Issue track and Testing Planning using Jira.</li><li> Manual and Automation web/rest testing using Excel and other tools.</li></ul> ",
+                    "skills": ["Jira", "Excel"]
+                },
+                {
+                    "jobTitle": "Unity 3D Programmer/2D animator, Remote",
+                    "company": "Xiara Studios",
+                    "timeframe": "March 2016 to January 2018",
+                    "description": "<ul><li>Sprint Planning and Daily meetings within a team up to 10 members using Trello</li><li> Github merge, rebase, create and review pull requests.</li><li>Programming Gameplay and Multiplayer Features for 2D Fighting game for Android Platforms.</li><li>2D assets integration with code</li><li>2D animations for playable characters.</li></ul> ",
+                    "skills": ["Unity3D UI Programming", "Unity3D Gameplay Programmer", "Unity3D Multiplayer Programmer", "2D Animator"]
                 }
             ]
         },
@@ -39,28 +59,52 @@
             "defaultAction":"",
             "list": [
                 {
-                    "name": "Cool project One",
-                    "link": "https://aaronclaros.itch.io/mbdk-ultra",
-                    "linkEmbed": "https://itch.io/embed/704517",
-                    "date_added": "2017-06-09",
-                    "description": "This is a description",
+                    "name": "Sacred Tails",
+                    "link": "https://www.sacredtails.com/",
+                    "image": "/assets/images/Portfolio/SacredTails/sacred_tails_banner.jfif",
+                    "date_added": "April 2022 - November 2022",
+                    "description": "Web 3 turn-based combat game, collect NFT monsters called Shinseis and fight with them against other players. <br> <a href='https://www.youtube.com/watch?v=-GOJLQ9uhV8' target='blank'>Gameplay Preview Video</a>",
+                    "roles": "Role: <em>Principal Game Designer</em> (Outsourcing-Contractor)",
                     "technologies": [
-                        "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
+                        "Game Flow Design", "UX Design", "PvP Combat Design", "PvP Combat Balance", "Character Dialogs Writing", "Unity3D Scripts Edit/Update"
                     ]
                 },
                 {
-                    "name": "Cool project Two",
-                    "link": "https://aaronclaros.itch.io/mbdk-ultra",
-                    "linkEmbed": "https://itch.io/embed/704517",
-                    "date_added": "2017-06-09",
-                    "description": "This is a description",
+                    "name": "Long Delivery",
+                    "link": "https://aaronclaros.itch.io/long-delivery",
+                    "linkEmbed": "https://itch.io/embed/1177158",
+                    "date_added": "September 2021",
+                    "description": "Puzzle Game Prototype, Control a delivery truck to match the correct building for each container color. <br> <a href='https://youtu.be/YWMagoJXqzY' target='blank'>Gameplay Video</a> ",
+                    "roles": "Role: <em>Game Developer</em>",
                     "technologies": [
-                        "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
+                        "Prototyping", "Game Design", "Level Design", "Puzzle Design", "Unity3D Programming"
+                    ]
+                },
+                {
+                    "name": "Sword of Destiny",
+                    "link": "https://aaronclaros.itch.io/sword-of-destiny",
+                    "linkEmbed": "https://itch.io/embed/1364546",
+                    "date_added": "January 2022",
+                    "description": "Turn-Based RPG Game Prototype, Defeat demonic spirits by killing or sparing them using a sword that can heal and damage them. <br> <a href='https://youtu.be/CE5t0aNbv_8' target='blank'>Gameplay Video</a> ",
+                    "roles": "Role: <em>Game Developer</em>",
+                    "technologies": [
+                        "Prototyping", "Game Design", "Combat Design", "Unity3D Programming"
+                    ]
+                },
+                {
+                    "name": "Anata Carnival",
+                    "link": "https://play.google.com/store/apps/details?id=com.xiarastudios.Anata",
+                    "image": "/assets/images/Portfolio/AnataCarnival/AnataCarnival-GameTitle.png",
+                    "date_added": "February 2017, Mobile - Android",
+                    "description": "2D fighting game, Fight with Characters from the Bolivian Tradicional Carnival Dances",
+                    "roles": "Role: <em>Unity3D Game Programmer</em>",
+                    "technologies": [
+                        "Unity3D UI Programming", "Unity3D Gameplay Programmer", "Unity3D Multiplayer Programmer", "2D Animator"
                     ]
                 },
                 {
                     "name": "View All Projects",
-                    "link": "/portfolio/"
+                    "link": "/portfolio"
                 }
             ]
         },
@@ -71,14 +115,14 @@
             "defaultAction":"",
             "list":[
                 {
-                    "title": "programmer training 1",
-                    "timeframe": "Jan 2020 - July 2021",
-                    "place": "UMSS"
+                    "title": "Quality Automation Intensive Training Program.",
+                    "timeframe": "Januay 2018 - September 2018",
+                    "place": "Fundacion JALA, Cochabamba"
                 },
                 {
-                    "title": "programmer training 2",
-                    "timeframe": "Jan 2020 - July 2021",
-                    "place": "UMSS"
+                    "title": "High School Diploma, ",
+                    "timeframe": "Januay 2008 - December 2012",
+                    "place": "Instituto Tecnico Puerto de Mejillones, Cochabamba"
                 }
             ]
         }
