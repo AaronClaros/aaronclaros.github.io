@@ -23,6 +23,17 @@
             ]
         },
         {
+            "name": "Elk OS",
+            "link": "/portfolio/elk-os/",
+            "image": "/assets/images/Portfolio/Elk-OS/elk_os-cover_anim.gif",
+            "date_added": "Febuary 2023, PC - Windows",
+            "description": "roguelike game about infecting the internet with a computer virus",
+            "roles": "Role: <em>Game Designer</em> <em>Game Developer</em> <em>Pixel Artist</em>",
+            "technologies": [
+                "Prototyping", "Game Design", "Godot","GDscript Programming"
+            ]
+        },
+        {
             "name": "Sword of Destiny",
             "link": "https://aaronclaros.itch.io/sword-of-destiny",
             "image": "/assets/images/Portfolio/SwordOfDestiny/SwordOfDestiny-Game_Title.png",
